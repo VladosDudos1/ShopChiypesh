@@ -23,6 +23,7 @@ namespace ShopChiypesh
         public MainWindow()
         {
             InitializeComponent();
+
         }
     }
 }
