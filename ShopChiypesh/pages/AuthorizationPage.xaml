@@ -1,0 +1,38 @@
+﻿<Page x:Class="ShopChiypesh.pages.AuthorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ShopChiypesh.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="AuthorizationPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="auto_text" Grid.Column="1" Grid.ColumnSpan="2" TextAlignment="Center" VerticalAlignment="Bottom" Text="Авторизация" FontSize="32" Foreground="#AD7261"/>
+        <TextBlock x:Name="login_text" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="Логин" FontSize="24" Foreground="#AD7261"/>
+        <TextBlock x:Name="password_text" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="Пароль" FontSize="24" Foreground="#AD7261"/>
+        <TextBox x:Name="login_tbx" Grid.Column="1" VerticalContentAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" FontSize="24" Background="#FAB7A4" Foreground="#AD7261"/>
+        <PasswordBox x:Name="password_tbx" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" FontSize="24" Background="#FAB7A4" Foreground="#AD7261"/>
+        <Button x:Name="auto_btn" Grid.Column="1" Grid.Row="7" Margin="10, 0, 10, 0" FontSize="24"  Background="#FAB7A4" Foreground="#AD7261" Content="Войти" Click="auto_btn_Click"/>
+        <Button x:Name="reg_btn" Grid.Column="2" Grid.Row="7" Margin="10, 0, 10, 0" FontSize="24" Background="#FAB7A4" Foreground="#AD7261" Click="reg_btn_Click" Content="Регистрация"/>
+        <CheckBox x:Name="safe_chbx" Grid.Column="1" Grid.Row="6" Grid.ColumnSpan="2" Content="Запомнить данные" FontSize="24" Background="#FAB7A4" Foreground="#AD7261" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+    </Grid>
+</Page>

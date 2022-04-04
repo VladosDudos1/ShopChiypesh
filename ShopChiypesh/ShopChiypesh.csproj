@@ -62,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="BD_connection.cs" />
     <Compile Include="Client.cs">
       <DependentUpon>ShopBase.tt</DependentUpon>
     </Compile>
@@ -73,6 +74,12 @@
     </Compile>
     <Compile Include="Order.cs">
       <DependentUpon>ShopBase.tt</DependentUpon>
+    </Compile>
+    <Compile Include="pages\AuthorizationPage.xaml.cs">
+      <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pages\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Product.cs">
       <DependentUpon>ShopBase.tt</DependentUpon>
@@ -128,7 +135,7 @@
     <Compile Include="Worker.cs">
       <DependentUpon>ShopBase.tt</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Page Include="BackgroundWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -136,10 +143,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="BackgroundWindow.xaml.cs">
+      <DependentUpon>BackgroundWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="pages\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
