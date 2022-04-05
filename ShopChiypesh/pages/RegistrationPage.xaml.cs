@@ -28,29 +28,28 @@ namespace ShopChiypesh.pages
             InitializeComponent();
         }
 
-        private void Reg_event(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Sign_event(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new AuthorizationPage());
         }
         private void Save_event(object sender, RoutedEventArgs e)
         {
-            Regex regex = new Regex(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[^a-zA-Z0-9])\S{6,16}$");
+            var nyms = new Regex(@"[0-9]");
+            var symbols = new Regex(@"[!@#$%^]");
+            var latinLetters = new Regex(@"[A-Z]");
 
-            MatchCollection matches = regex.Matches(txt_password.ToString());
+            var matchesNum = nyms.IsMatch(txt_password.Password.ToString());
+            var matchesSymb = symbols.IsMatch(txt_password.Password.ToString());
+            var matchesLetters = latinLetters.IsMatch(txt_password.Password.ToString());
 
-            if (matches.Count > 1)
+            if (matchesNum && matchesSymb && matchesLetters && txt_password.Password.ToString().Length >= 6)
             {
                 try
                 {
                     User a = new User
                     {
                         Login = txt_login.Text,
-                        Password = txt_password.ToString(),
+                        Password = txt_password.Password.ToString(),
                         RoleId = 3
                     };
                     BD_connection.shop.User.Add(a);
