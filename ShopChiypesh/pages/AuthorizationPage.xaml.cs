@@ -43,6 +43,7 @@ namespace ShopChiypesh.pages
                     Properties.Settings.Default.Login = null;
                     Properties.Settings.Default.Save();
                 }
+                NavigationService.Navigate(new MainPage(k));
             }
 
             else MessageBox.Show("Логин или пароль введены неверно", "error", MessageBoxButton.OK, MessageBoxImage.Error);

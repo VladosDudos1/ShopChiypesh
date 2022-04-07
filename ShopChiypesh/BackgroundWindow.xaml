@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ShopChiypesh"
         mc:Ignorable="d"
-        Title="Магазин" Height="500" Width="900">
+        Title="Магазин" Height="650" Width="1000">
     <Grid>
         <Frame x:Name="frame_auto_reg" NavigationUIVisibility="Hidden" Background="#FFFFFF"/>
     </Grid>
