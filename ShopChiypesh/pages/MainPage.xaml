@@ -29,47 +29,28 @@
                     VerticalAlignment="Center" 
                     Grid.ColumnSpan="4"
                     Width="401" Height="56">
-            <Border BorderBrush="#AD7261"
-                Grid.Column="1" 
-                Grid.Row="0"
-                BorderThickness="3"
-                CornerRadius="15"
-                Margin="20, 10"
-                Padding="10, 0, 10, 0">
-                <Button Content="Сброс" 
+            <Button Content="Сброс" 
                     FontSize="20" 
-                    Click="Reset_event" 
-                    Margin="1"/>
-            </Border>
-            <Border BorderBrush="#AD7261"
-                Grid.Column="1" 
-                Grid.Row="0"
-                BorderThickness="3"
-                CornerRadius="15"
-                Margin="0, 10, 10, 10"
-                Padding="10, 0">
-                <Button Content="Удалить" 
+                    Click="Reset_event"
+                    Margin="20, 10"
+                    Padding="10, 0, 10, 0"/>
+            <Button Content="Удалить" 
                     FontSize="20" 
-                    Click="Del_event"/>
-            </Border>
-
-            <Border BorderBrush="#AD7261"
-                Grid.Column="1" 
-                Grid.Row="0"
-                BorderThickness="3"
-                CornerRadius="15"
-                Margin="10, 10, 0, 10"
-                Padding="10, 0, 10, 0">
-                <Button Content="Изменить" 
-                    Grid.Column="0" 
-                    Grid.Row="5" 
+                    Click="Del_event"
+                    Grid.Column="1" 
+                    Grid.Row="0"
+                    Margin="0, 10, 10, 10"
+                    Padding="10, 0"/>
+            <Button Content="Изменить" 
+                    Grid.Column="1" 
+                    Grid.Row="0"
                     Grid.ColumnSpan="2" 
                     FontSize="20" 
-                    Click="EditBtnt_Click" 
-                    Margin="1"/>
-            </Border>
-
-        </StackPanel >
+                    Click="EditBtnt_Click"
+                    Margin="10, 10, 0, 10"
+                    Padding="10, 0, 10, 0"/>
+        </StackPanel>
+        
         <StackPanel HorizontalAlignment="Left"  
                     Orientation="Horizontal" 
                     Grid.Column="3"
